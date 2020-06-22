@@ -1,24 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import hamburguerMenu from './img/abrir-menu.svg'
+
+class MenuITGirls extends Component {
+  render() {
+    return (
+        <div>
+        <div className="barra-topo">
+        </div>
+        <input id="check" type="checkbox"/>
+        <label id="label-menu" for="check">
+            <img id="fecha-menu" src={hamburguerMenu} />
+        </label>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">O PROJETO</a></li>
+                <li><a href="">CONTEÚDOS</a></li>
+                <li><a href="">NOTÍCIAS</a></li>
+                <li><a href="">PARTICIPANTES</a></li>
+                <li><a href="">FALE CONOSCO</a></li>
+            </ul>
+            <div className="midias-icones">
+                <h1 className="fa fa-instagram" aria-hidden="true"></h1>
+                &nbsp;&nbsp;&nbsp;&nbsp;{/* Colocar padding proporcional... */}
+                <i className="fa fa-facebook-official" aria-hidden="true"></i>
+            </div>
+        </nav>
+    </div>
+    );
+  };
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MenuITGirls/>
     </div>
   );
 }
