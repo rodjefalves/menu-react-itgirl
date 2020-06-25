@@ -5,8 +5,8 @@ import MenuITGirls from './components/menu';
  
 function App() {
   return (
-    <div className="App">
-      
+    <div className="App"> 
+      </>    
       <MenuITGirls/>
     </div>
   );
