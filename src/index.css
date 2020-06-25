@@ -56,11 +56,7 @@ ul a {
 }
 
 a:hover {
-  background-color: #81200D;
-}
-
-#check {
-  display: none;
+  color: #FF9505;
 }
 
 #check:checked ~ nav {
@@ -92,4 +88,39 @@ nav {
   text-align: center;
   color: #fff;
   font-size: 1.5em;
+}
+
+@media (max-width: 600px) {
+  .barra-topo{
+    display: none;
+    
+  }
+  
+  nav {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    border: 2px solid green;
+    
+  }
+
+  .container-home {
+    border: 2px solid red;
+    width: 100%;
+  }
+
+  #imgHome {
+    width: 300px;
+    border: 2px solid black;
+  }
+  
+}
+
+@media (min-width: 600px) {
+  #check {
+    display: none;
+    border: 2px solid red;
+  }
+
+  
 }
